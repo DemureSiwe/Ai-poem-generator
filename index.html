@@ -7,32 +7,37 @@
     <title>AI poem generator</title>
   </head>
   <body>
-    <h1>Poem generator</h1>
+    <div class="container">
+      <h1>Poem generator</h1>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="enter the topic of the poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Roses are red
-        <br />
-        Violets are blue
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="enter the topic of the poem"
+            autofocus
+            required
+            class="instructions"
+          />
+          <input type="submit" class="submit-buttton" />
+        </form>
+        <div class="poem">
+          Roses are red
+          <br />
+          Violets are blue
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded with ❣️<a
-        href="https://github.com/DemureSiwe/Ai-poem-generator.git"
-      >
-        by Busisiwe Tsetseng</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded with ❣️ by<a
+          href="https://github.com/DemureSiwe/Ai-poem-generator.git"
+        >
+          Busisiwe Tsetseng</a
+        >
+        and is hosted on
+        <a href="http://earnest-smakager-c13df1.netlify.app">Netlify</a>
+      </footer>
+    </div>
     <script src="scrip.js"></script>
   </body>
 </html>
