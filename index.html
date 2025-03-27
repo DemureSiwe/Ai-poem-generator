@@ -13,18 +13,21 @@
       <h1>Poem generator</h1>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="enter the topic of the poem"
-            autofocus
-            required
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-buttton" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="enter the topic of the poem"
+              autofocus
+              required
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-buttton" />
+          </form>
+          <div class="hint">e.g: Her eyes, Summer,Roses.</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>

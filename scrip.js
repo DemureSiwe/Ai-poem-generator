@@ -18,9 +18,14 @@ function generatePoem(event) {
     "You are a romentic poet and enjoy writing short love poems. Your goal is to follow user instructions using HTML format without mentioning HTML in your poem";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating poem");
-  console.log(`promt: ${prompt}`);
-  console.log(`promt: ${context}`);
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">
+  <div class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot">
+  </div>Generating a romatic poem about ${instructionsInput.value} </div>`;
 
   axios.get(apiUrl).then(displayPoem);
 }
