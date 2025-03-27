@@ -1,4 +1,9 @@
 body {
+  background: radial-gradient(
+    circle at 50.4% 50.5%,
+    rgb(251, 32, 86) 0%,
+    rgb(135, 2, 35) 90%
+  );
   background-color: #e4e5ff;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,7 +55,7 @@ form {
 
 .submit-buttton {
   margin-left: 10px;
-  background: #885df1;
+  background: #e696ab;
   color: white;
   border: none;
   width: 150px;
@@ -65,12 +70,13 @@ form {
   padding: 20px;
   border-radius: 10px;
   line-height: 2;
-  border-left: 3px solid#885df1;
+  border-left: 3px solid#370606;
   box-shadow: 0px 20px 60px rgba (65, 50, 100, 0.08);
 }
 .hidden {
   display: none;
 }
+
 @keyframes dotSpin {
   0%,
   100% {
@@ -105,7 +111,7 @@ form {
   animation-delay: 0.4s;
 }
 a {
-  color: #885df1;
+  color: #fef9fa;
 }
 footer {
   text-align: center;
